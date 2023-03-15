@@ -1,0 +1,75 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Yazar Giriş</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords"
+          content="Report Login Form Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <!-- //Meta tag Keywords -->
+    <link href="//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!--/Style-CSS -->
+    <link rel="stylesheet" href="~/BlogLogin/css/style.css" type="text/css" media="all" />
+    <!--//Style-CSS -->
+
+    <link rel="stylesheet" href="~/BlogLogin/css/font-awesome.min.css" type="text/css" media="all">
+
+    <link rel="icon" type="image/png" href="~/BlogLogin/images/favicon.ico" />
+</head>
+
+<body>
+
+    <!-- form section start -->
+    <section class="w3l-hotair-form">
+        @*<h1>YAZAR GİRİŞİ</h1>*@
+        <div class="container">
+            <!-- /form -->
+            <div class="workinghny-form-grid">
+                <div class="main-hotair">
+                    <div class="content-wthree">
+                        <h2>BLOG YAZAR GİRİŞİ</h2>
+                        @using (Html.BeginForm("AuthorLogin", "Login", FormMethod.Post))
+                        {
+                            <input type="text" class="text" name="Mail" placeholder="Mail Adresi" required="" autofocus>
+                            <input type="password" class="password" name="Password" placeholder="Şifre" required="" autofocus>
+                            <button class="btn" type="submit">GİRİŞ YAP</button>
+                        }
+
+
+                        <p class="account">Şifremi Unuttum? <a href="#signup">Şifre Gönder</a></p>
+                        <p class="account">Admin Girişi: <a href="/Login/AdminLogin/">GİRİŞ YAP</a></p>
+
+                    </div>
+                    <div class="w3l_form align-self">
+                        <a href="/Blog/Index/" style="color: blue">FERO BLOG SİTESİNE GİT</a>
+                        <div class="left_grid_info">
+                            <img src="~/BlogLogin/images/bg-01.jpg" width="500" height="250" alt="" class="img-bordered">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //form -->
+        </div>
+        <!-- copyright-->
+        <div class="copyright text-center">
+            <p class="copy-footer-29">
+                © 2023 Login Form. Tüm Hakları Saklıdır | Design by <a href="https://www.linkedin.com/in/altuntasahmet/">Ahmet Ferhat</a>
+            </p>
+        </div>
+        <!-- //copyright-->
+    </section>
+    <!-- //form section start -->
+</body>
+
+</html>

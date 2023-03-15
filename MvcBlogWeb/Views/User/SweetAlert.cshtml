@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "SweetAlert";
+    Layout = "~/Views/Shared/_AuthorLayout.cshtml";
+}
+<br />
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+
+<button class="btn btn-primary" style="height:500px; width:350px;" id="btn1">TIKLA</button>
+<button class="btn btn-danger" style="height:500px; width:350px;" id="btn2">GÖSTER</button>
+
+
+<script>
+    $('#btn1').click(function () {
+        swal("YAZAR PANELİ HOŞGELDİNİZ");
+    });
+</script>
+
+<script>
+    $('#btn2').click(function () {
+        swal("BLOG WEB SİTESİ");
+    });
+</script>
